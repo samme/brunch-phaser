@@ -5,7 +5,7 @@ A [Brunch](http://brunch.io) skeleton for making games with [Phaser](http://phas
 
 You can use CoffeeScript, ES6, TypeScript, or plain JavaScript.
 
-    brunch new <project> -s phaser
+    brunch new <project> -s samme/brunch-phaser
 
 Get started
 -----------
