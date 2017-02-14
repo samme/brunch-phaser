@@ -19,17 +19,18 @@
   "devDependencies": {
     "auto-reload-brunch": "^2.0.0",
     "babel-brunch": "^6.0.6",
-    "brunch": "^2.0.0",
+    "brunch": "^2.10.7",
     "brunch-typescript": "^2.1.0",
-    "clean-css-brunch": "^2.0.0",
-    "coffee-script-brunch": "^2.1.0",
-    "css-brunch": "^2.0.0",
-    "javascript-brunch": "^2.0.0",
+    "clean-css-brunch": "^2.10.0",
+    "coffee-script-brunch": "^2.10.0",
+    "css-brunch": "^2.10.0",
+    "javascript-brunch": "^2.10.0",
     "uglify-js-brunch": "^2.0.0"
   },
   "main": "index.js",
   "keywords": [
-    "brunch-skeleton"
+    "brunch-skeleton",
+    "phaser"
   ],
   "license": "ISC"
 }
