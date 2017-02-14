@@ -21,12 +21,19 @@ Get started
   - Write your code in [app](app).
   - Put game assets in [assets](app/static/assets).
 
+Phaser
+------
+
+Phaser is managed through NPM. Update with:
+
+    npm update phaser
+
 Add NPM modules
 ---------------
 
     npm install -S <package>
 
-and `require('package')` in your code.
+and `require('<package>')` in your code.
 
 Add other libraries
 -------------------
