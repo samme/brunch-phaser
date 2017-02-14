@@ -2,7 +2,7 @@
   "name": "brunch-phaser",
   "description": "Skeleton for making games with Phaser. Use CoffeeScript, ES6, JS, or TypeScript.",
   "author": "samme",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.io/samme/brunch-phaser"
