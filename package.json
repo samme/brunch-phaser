@@ -1,12 +1,10 @@
 {
-  "name": "brunch-phaser",
-  "description": "Skeleton for making games with Phaser. Use CoffeeScript, ES6, JS, or TypeScript.",
-  "author": "samme",
-  "version": "0.1.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.io/samme/brunch-phaser"
-  },
+  "name": "a-phaser-game",
+  "description": "A game made with brunch-phaser",
+  "private": true,
+  "author": "",
+  "version": "0.0.1",
+  "repository": "",
   "scripts": {
     "start": "brunch watch --server",
     "build": "brunch build --production",
@@ -17,20 +15,14 @@
     "phaser-ce": "^2.7.3"
   },
   "devDependencies": {
-    "auto-reload-brunch": "^2.0.0",
-    "babel-brunch": "^6.0.6",
-    "brunch": "^2.10.7",
-    "brunch-typescript": "^2.1.0",
-    "clean-css-brunch": "^2.10.0",
-    "coffee-script-brunch": "^2.10.0",
-    "css-brunch": "^2.10.0",
-    "javascript-brunch": "^2.10.0",
-    "uglify-js-brunch": "^2.0.0"
-  },
-  "main": "index.js",
-  "keywords": [
-    "brunch-skeleton",
-    "phaser"
-  ],
-  "license": "ISC"
+    "auto-reload-brunch": "^2",
+    "babel-brunch": "~6.0",
+    "brunch": "^2",
+    "brunch-typescript": "^2",
+    "clean-css-brunch": "^2",
+    "coffee-script-brunch": "^2",
+    "css-brunch": "^2",
+    "javascript-brunch": "^2",
+    "uglify-js-brunch": "^2"
+  }
 }
