@@ -14,7 +14,7 @@ Get started
   - [Node.js](http://nodejs.org): `brew install node` on OS X
   - [Brunch](http://brunch.io): `npm install -g brunch`
 - Run:
-  - `brunch new <project> -s phaser && cd <project>`
+  - `brunch new <project> -s samme/brunch-phaser`
   - `npm run start` or `brunch watch --server` watches the project with continuous rebuild.
   - `npm run build` or `brunch build --production` builds minified project for production.
 - Make:
