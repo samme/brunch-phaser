@@ -11,7 +11,7 @@ Get started
 -----------
 
 - Install (if you don't have them):
-  - [Node.js](http://nodejs.org): `brew install node` on OS X
+  - [Node.js](https://nodejs.org)
   - [Brunch](http://brunch.io): `npm install -g brunch`
 - Run:
   - `brunch new <project> -s samme/brunch-phaser`
@@ -26,14 +26,23 @@ Phaser
 
 Phaser is managed through NPM. Update with:
 
-    npm update phaser
+    npm update
 
-Add NPM modules
----------------
+If you want to switch libraries:
+
+    npm remove -S phaser-ce && npm install -S phaser
+
+Add NPM packages
+----------------
 
     npm install -S <package>
 
 and `require('<package>')` in your code.
+
+Add bower packages
+------------------
+
+    bower install -S <package>
 
 Add other libraries
 -------------------
@@ -43,7 +52,7 @@ Add the unminified script to [vendor](vendor).
 Make a texture atlas
 --------------------
 
-[Install glue](http://glue.readthedocs.io/en/latest/installation.html).
+[Install glue](http://glue.readthedocs.io/en/latest/installation.html), then
 
     npm run glue
 
