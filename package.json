@@ -10,11 +10,11 @@
     "build": "brunch build --production"
   },
   "dependencies": {
-    "phaser-ce": "^2.7.3"
+    "phaser-ce": "^2"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",
-    "babel-brunch": "~6.0",
+    "babel-brunch": "6.1.0",
     "brunch": "^2",
     "brunch-typescript": "^2",
     "clean-css-brunch": "^2",
