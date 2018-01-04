@@ -1,11 +1,15 @@
 var game = window.GAME = new Phaser.Game({
-  // antialias:   true,
-  // height:      600,
-  // renderer:    Phaser.AUTO,
-  // resolution:  1,
-  // scaleMode:   Phaser.ScaleManager.NO_SCALE,
-  // transparent: false,
-  // width:       800,
+  // See <https://photonstorm.github.io/phaser-ce/global.html#GameConfig>
+  // antialias:               true,
+  // backgroundColor:         0x000000,
+  // disableVisibilityChange: false,
+  // enableDebug:             true,
+  // height:                  600,
+  // renderer:                Phaser.AUTO,
+  // resolution:              1,
+  // scaleMode:               Phaser.ScaleManager.NO_SCALE,
+  // transparent:             false,
+  // width:                   800,
 });
 
 game.state.add('boot', require('states/boot'));

@@ -5,10 +5,13 @@ module.exports = {
     this.game.renderer.renderSession.roundPixels = true;
     this.tweens.frameBased = true;
 
-    this.bar = this.add.text(this.world.centerX, this.world.centerY, '..........', {
-      fill: 'white', font: '32px monospace'
-    });
-    this.bar.anchor.set(0.5);
+    this.whitePixel = this.add.bitmapData(1, 1);
+    this.whitePixel.fill(255, 255, 255);
+    
+    this.bar = this.whitePixel.addToWorld();
+    this.bar.width = 100;
+    this.bar.height = 10;
+    this.bar.alignIn(this.world.bounds, Phaser.CENTER);
   },
 
   preload: function () {
@@ -19,6 +22,11 @@ module.exports = {
 
   create: function () {
     this.state.start('menu');
+  },
+  
+  shutdown: function () {
+    this.whitePixel.destroy();
+    this.whitePixel = null;
   }
 
 };
