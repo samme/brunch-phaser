@@ -48,16 +48,3 @@ Add other libraries
 -------------------
 
 Add the unminified script to [vendor](vendor).
-
-Make a texture atlas
---------------------
-
-[Install glue](http://glue.readthedocs.io/en/latest/installation.html), then
-
-    npm run glue
-
-or
-
-    npm run glue-watch
-
-Configure glue in [sprite.conf](app/static/assets/sprite.conf).

@@ -7,9 +7,7 @@
   "repository": "",
   "scripts": {
     "start": "brunch watch --server",
-    "build": "brunch build --production",
-    "glue": "glue app/static/assets app/static/atlas --json",
-    "glue-watch": "glue app/static/assets app/static/atlas --json --watch"
+    "build": "brunch build --production"
   },
   "dependencies": {
     "phaser-ce": "^2.7.3"
