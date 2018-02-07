@@ -1,19 +1,31 @@
-var game = window.GAME = new Phaser.Game({
-  // See <https://photonstorm.github.io/phaser-ce/global.html#GameConfig>
-  // antialias:               true,
-  // backgroundColor:         0x000000,
-  // disableVisibilityChange: false,
-  // enableDebug:             true,
-  // height:                  600,
-  // renderer:                Phaser.AUTO,
-  // resolution:              1,
-  // scaleMode:               Phaser.ScaleManager.NO_SCALE,
-  // transparent:             false,
-  // width:                   800,
+window.WEBGL_RENDERER = true;
+window.CANVAS_RENDERER = false;
+
+require('phaser');
+
+window.game = new Phaser.Game({
+  type: Phaser.AUTO,
+  parent: 'phaser-example',
+  width: 800,
+  height: 600,
+  scene: {
+
+    preload: function preload () {
+      this.load.image('logo', 'assets/logo.png');
+    },
+
+    create: function create () {
+      var logo = this.add.image(400, 150, 'logo');
+
+      this.tweens.add({
+        targets: logo,
+        y: 450,
+        duration: 2000,
+        ease: 'Quad',
+        yoyo: true,
+        loop: -1
+      });
+    }
+
+  }
 });
-
-game.state.add('boot', require('states/boot'));
-game.state.add('game', require('states/game'));
-game.state.add('menu', require('states/menu'));
-
-game.state.start('boot');

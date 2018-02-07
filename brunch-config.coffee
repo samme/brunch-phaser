@@ -12,12 +12,6 @@ module.exports =
   modules:
     autoRequire:
       'app.js': ['initialize']
-  npm:
-    # We're using Phaser as `window.Phaser`
-    static: [
-      'node_modules/phaser/build/phaser.js'
-      'node_modules/phaser-ce/build/phaser.js'
-    ]
   plugins:
     # https://github.com/babel/babel-brunch#configuration
     babel:
