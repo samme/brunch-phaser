@@ -1,7 +1,7 @@
 Brunch with Phaser 3
 ====================
 
-A [Brunch](http://brunch.io) skeleton for making games with [Phaser 3 (beta)](http://phaser.io/phaser3).
+A [Brunch](http://brunch.io) skeleton for making games with [Phaser 3](http://phaser.io/phaser3).
 
 Get started
 -----------
@@ -28,9 +28,6 @@ Update with:
 
     npm update
 
-I'm using beta.19. beta.20 gives
-
-> Error: Cannot find module 'phaser/src/renderer/webgl/shaders/TextureTint.vert' […]
 
 Add NPM packages
 ----------------
