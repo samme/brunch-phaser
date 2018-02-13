@@ -1,7 +1,11 @@
 Brunch with Phaser 3
 ====================
 
-A [Brunch](http://brunch.io) skeleton for making games with [Phaser 3](http://phaser.io/phaser3).
+A [Brunch](http://brunch.io) skeleton for making games with [Phaser](http://phaser.io).
+
+You can use CoffeeScript, ES6, TypeScript, or plain JavaScript.
+
+    brunch new <project> -s phaser
 
 Get started
 -----------
@@ -10,7 +14,7 @@ Get started
   - [Node.js](https://nodejs.org)
   - [Brunch](http://brunch.io): `npm install -g brunch`
 - Run:
-  - `git clone https://github.com/samme/brunch-phaser.git --branch phaser3`
+  - `brunch new <project> -s samme/brunch-phaser` (or see [Clone](#clone), below)
   - `npm run start` or `brunch watch --server` watches the project with continuous rebuild.
   - `npm run build` or `brunch build --production` builds minified project for production.
 - Make:
