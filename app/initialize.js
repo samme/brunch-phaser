@@ -13,6 +13,16 @@ var config = {
     }
   },
 
+  title: '☕️ Brunch with Phaser',
+
+  url: 'https://github.com/samme/brunch-phaser',
+
+  version: '0.0.1',
+
+  banner: {
+    background: ['#e54661', '#ffa644', '#998a2f', '#2c594f', '#002d40']
+  },
+
   scene: {
 
     preload: function () {
@@ -20,6 +30,7 @@ var config = {
       this.load.image('sky', 'space3.png');
       this.load.image('logo', 'phaser3-logo.png');
       this.load.image('red', 'red.png');
+      // this.load.on('progress', console.log);
     },
 
     create: function () {
