@@ -3,7 +3,7 @@ Brunch with Phaser 3
 
 A [Brunch](http://brunch.io) skeleton for making games with [Phaser 3](http://phaser.io/phaser3). ([Why brunch?](http://brunch.io/docs/why-brunch))
 
-You can use CoffeeScript, ES6, TypeScript, or plain JavaScript.
+You can use [CoffeeScript][1], [ES6][2], [TypeScript][3], or plain JavaScript.
 
     brunch new <project> -s phaser
 
@@ -71,3 +71,7 @@ npm install -D plugin-name
 # Remove, e.g.,
 npm uninstall -D babel-brunch brunch-typescript coffee-script-brunch
 ```
+
+[1]: http://coffeescript.org
+[2]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_2015_support_in_Mozilla
+[3]: https://www.typescriptlang.org
