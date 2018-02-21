@@ -32,10 +32,10 @@ window.game = new Phaser.Game({
   //   target: 60,
   //   forceSetTimeout: false,
   // },
-  pixelArt: false,
-  transparent: false,
-  clearBeforeRender: true,
-  backgroundColor: 0, // black
+  // pixelArt: false,
+  // transparent: false,
+  // clearBeforeRender: true,
+  // backgroundColor: 0x000000, // black
   loader: {
     // baseURL: '',
     path: 'assets/',
