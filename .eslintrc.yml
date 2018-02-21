@@ -11,6 +11,15 @@ rules:
   linebreak-style:
     - error
     - unix
+  no-console:
+    - warn
+    - allow:
+      - debug
+      - error
+      - info
+      - log
+      - time
+      - timeEnd
   quotes:
     - error
     - single
