@@ -1,11 +1,16 @@
 module.exports = {
 
+  init: function () {
+    console.log('init', this);
+  },
+
   preload: function () {
-    this.load.setPath('assets/');
     this.load.image('sky', 'space3.png');
     this.load.image('logo', 'phaser3-logo.png');
     this.load.image('red', 'red.png');
-    // this.load.on('progress', console.log);
+    this.progressBar = this.add.graphics(0, 0);
+    this.load.on('progress', this.onLoadProgress, this);
+    this.load.on('complete', this.onLoadComplete, this);
   },
 
   create: function () {
@@ -22,6 +27,25 @@ module.exports = {
     logo.setBounce(1, 1);
     logo.setCollideWorldBounds(true);
     emitter.startFollow(logo);
+  },
+
+  extend: {
+
+    progressBar: null,
+
+    onLoadComplete: function () { // (loader, storageSize, failedSize)
+      console.log('onLoadComplete');
+      this.progressBar.destroy();
+    },
+
+    onLoadProgress: function (progress) {
+      this.progressBar
+        .clear()
+        .fillStyle(0xffffff, 0.75)
+        .fillRect(0, 0, 800 * progress, 50);
+      console.log('progress', progress);
+    }
+
   }
 
 };
