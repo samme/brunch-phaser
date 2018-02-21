@@ -40,7 +40,8 @@ window.game = new Phaser.Game({
     // baseURL: '',
     path: 'assets/',
     maxParallelDownloads: 6,
-    // crossOrigin: 'anonymous'
+    // crossOrigin: 'anonymous',
+    // timeout: 0
   },
   physics: {
     default: 'arcade',
