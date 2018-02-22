@@ -1,7 +1,7 @@
 module.exports = {
 
-  init: function () {
-    console.log('init', this);
+  init: function (data) {
+    console.log('init', data, this);
   },
 
   preload: function () {
