@@ -14,12 +14,43 @@ Get started
   - [Node.js](https://nodejs.org)
   - [Brunch](http://brunch.io): `npm install -g brunch`
 - Run:
-  - `brunch new <project> -s phaser`
+  - `brunch new <project> -s phaser` **or** see [Clone](#clone), below.
   - `npm run start` or `brunch watch --server` watches the project with continuous rebuild.
   - `npm run build` or `brunch build --production` builds a minified project for production.
 - Make:
   - Write your code in [app](app).
   - Put game assets in [assets](app/static/assets).
+
+### Clone
+
+If you'd like to start with a sample written in CoffeeScript, ES6, or TypeScript, create your new project by cloning this repository instead:
+
+```shell
+# Choose one:
+git clone https://github.com/samme/brunch-phaser.git --branch coffee
+git clone https://github.com/samme/brunch-phaser.git --branch es6
+```
+
+I'll update the [typescript](https://github.com/samme/brunch-phaser/tree/typescript) branch once the Phaser 3 type definitions are published.
+
+### Save
+
+You can make your own local skeleton:
+
+```shell
+# Choose a BRANCH (or use master)
+git clone https://github.com/samme/brunch-phaser.git brunch-phaser --branch BRANCH
+cd brunch-phaser
+# If you used a non-master branch, merge it into master:
+git merge BRANCH
+# If you make changes, commit them to master:
+git commit # etc.
+```
+
+```shell
+# Now you can use your own skeleton:
+brunch new <project> -s ./path/to/brunch-phaser
+```
 
 Phaser
 ------
@@ -44,8 +75,8 @@ Instead of `brunch new`, run:
 git clone https://github.com/samme/brunch-phaser.git project --branch phaser2
 ```
 
-Add NPM packages
-----------------
+Add packages
+------------
 
     npm install -S <package-name>
 
