@@ -7,6 +7,8 @@ You can use [CoffeeScript][1], [ES6][2], [TypeScript][3], or plain JavaScript.
 
     brunch new <project> -s phaser
 
+(For Phaser 2 (CE), please see see [brunch-phaser2](https://github.com/samme/brunch-phaser2).)
+
 Get started
 -----------
 
@@ -31,7 +33,7 @@ git clone https://github.com/samme/brunch-phaser.git --branch coffee
 git clone https://github.com/samme/brunch-phaser.git --branch es6
 ```
 
-I'll update the [typescript](https://github.com/samme/brunch-phaser/tree/typescript) branch once the Phaser 3 type definitions are published.
+I'll update the [typescript](https://github.com/samme/brunch-phaser/tree/typescript) branch when the Phaser 3 type definitions are published.
 
 ### Save
 
@@ -66,14 +68,6 @@ Update with:
 ### Other builds
 
 See the `npm.static` entry in [brunch-config](./brunch-config.coffee).
-
-### Phaser 2 (Phaser CE)
-
-Instead of `brunch new`, run:
-
-```shell
-git clone https://github.com/samme/brunch-phaser.git project --branch phaser2
-```
 
 Add packages
 ------------
