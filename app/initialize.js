@@ -51,6 +51,10 @@ window.game = new Phaser.Game({
       }
     }
   },
-  scene: require('scenes/default'),
+  scene: [
+    require('scenes/boot'),
+    require('scenes/default'),
+    require('scenes/menu')
+  ],
 
 });
