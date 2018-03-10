@@ -35,6 +35,8 @@ git clone https://github.com/samme/brunch-phaser.git --branch es6
 
 I'll update the [typescript](https://github.com/samme/brunch-phaser/tree/typescript) branch when the Phaser 3 type definitions are published.
 
+When these branches are mature I'll split them into separate skeletons so you can choose one with `brunch new …` instead of by cloning.
+
 ### Save
 
 You can make your own local skeleton:
