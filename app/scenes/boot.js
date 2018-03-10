@@ -19,30 +19,40 @@ module.exports = {
 
     progressBar: null,
 
-    progressBarRectangle: null,
+    progressCompleteRect: null,
+
+    progressRect: null,
 
     createProgressBar: function () {
-      var main = this.cameras.main;
-      this.progressBarRectangle = new Phaser.Geom.Rectangle(0, 0, 0.5 * main.width, 50);
-      Phaser.Geom.Rectangle.CenterOn(this.progressBarRectangle, 0.5 * main.width, 0.5 * main.height);
+      var Rectangle = Phaser.Geom.Rectangle;
+      var main = Rectangle.Clone(this.cameras.main);
+
+      this.progressRect = new Rectangle(0, 0, main.width / 2, 50);
+      Rectangle.CenterOn(this.progressRect, main.centerX, main.centerY);
+
+      this.progressCompleteRect = Phaser.Geom.Rectangle.Clone(this.progressRect);
+
       this.progressBar = this.add.graphics();
     },
 
     onLoadComplete: function (loader) {
-      console.log('onLoadComplete', loader);
+      console.debug('onLoadComplete', loader);
+
       this.progressBar.destroy();
     },
 
     onLoadProgress: function (progress) {
-      var rect = this.progressBarRectangle;
+      console.debug('progress', progress);
+
       var color = (this.load.failed.size > 0) ? (0xff2200) : (0xffffff);
+
+      this.progressRect.width = progress * this.progressCompleteRect.width;
       this.progressBar
         .clear()
         .fillStyle(0x222222)
-        .fillRect(rect.x, rect.y, rect.width, rect.height)
+        .fillRectShape(this.progressCompleteRect)
         .fillStyle(color)
-        .fillRect(rect.x, rect.y, progress * rect.width, rect.height);
-      console.log('progress', progress);
+        .fillRectShape(this.progressRect);
     }
 
   }
