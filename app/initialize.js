@@ -29,18 +29,19 @@ window.game = new Phaser.Game({
   },
   // fps: {
   //   min: 10,
-  //   target: 60,
-  //   forceSetTimeout: false,
+  //   target: 60
   // },
   // pixelArt: false,
+  // autoResize: false,
+  // roundPixels: false,
   // transparent: false,
   // clearBeforeRender: true,
   // backgroundColor: 0x000000, // black
   loader: {
     // baseURL: '',
     path: 'assets/',
-    maxParallelDownloads: 6,
-    // crossOrigin: 'anonymous',
+    maxParallelDownloads: 6
+    // crossOrigin: '', // e.g., 'anonymous'
     // timeout: 0
   },
   physics: {
@@ -51,10 +52,19 @@ window.game = new Phaser.Game({
       }
     }
   },
+  // audio: {
+  //   disableWebAudio: false,
+  //   noAudio: false
+  // },
+  callbacks: {
+    postBoot: function (game) {
+      console.debug('game.config', game.config);
+    }
+  },
   scene: [
     require('scenes/boot'),
     require('scenes/default'),
     require('scenes/menu')
-  ],
+  ]
 
 });
