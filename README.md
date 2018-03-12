@@ -98,7 +98,7 @@ npm list --dev --depth=0
 npm install -D plugin-name
 
 # Remove, e.g.,
-npm uninstall -D babel-brunch brunch-typescript coffee-script-brunch
+npm uninstall -D babel-brunch coffee-script-brunch typescript-brunch
 ```
 
 ### Settings
