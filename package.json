@@ -14,14 +14,10 @@
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",
-    "babel-brunch": "6.1.0",
     "brunch": "^2",
-    "brunch-typescript": "^2",
     "clean-css-brunch": "^2",
-    "coffee-script-brunch": "^2",
     "css-brunch": "^2",
     "javascript-brunch": "^2",
-    "typescript-brunch": "^2.3.0",
     "uglify-js-brunch": "^2"
   }
 }
