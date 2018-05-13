@@ -42,6 +42,7 @@ module.exports = {
     },
 
     shutdown: function () {
+      this.registry.set('score', this.score);
     }
 
   }

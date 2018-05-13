@@ -12,6 +12,7 @@ module.exports = {
   },
 
   create: function () {
+    this.registry.set('score', 0);
     this.scene.start('menu');
   },
 

@@ -6,7 +6,6 @@ module.exports = {
 
   init: function (data) {
     console.debug('init', this.scene.key, data, this);
-    this.highScore = data.score || 0;
   },
 
   create: function () {
@@ -21,7 +20,7 @@ module.exports = {
       .setOrigin(0.5)
       .setShadow(0, 1, '#62F6FF', 10);
 
-    this.add.text(400, 450, 'High Score: ' + this.highScore, {
+    this.add.text(400, 450, 'Last Score: ' + this.registry.get('score'), {
       fill: '#FED141',
       fontFamily: FONT,
       fontSize: 24
@@ -34,10 +33,8 @@ module.exports = {
 
   extend: {
 
-    highScore: 0,
-
     start: function () {
-      this.scene.start('default', { score: this.highScore });
+      this.scene.start('default');
     }
 
   }
