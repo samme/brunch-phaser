@@ -44,7 +44,7 @@ module.exports = {
     onLoadProgress: function (progress) {
       console.debug('progress', progress);
 
-      var color = (this.load.failed.size > 0) ? (0xff2200) : (0xffffff);
+      var color = this.load.totalFailed ? 0xff2200 : 0xffffff;
 
       this.progressRect.width = progress * this.progressCompleteRect.width;
       this.progressBar
