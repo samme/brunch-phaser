@@ -42,7 +42,6 @@ module.exports = {
     },
 
     shutdown: function () {
-      this.physics.world.destroy();
     }
 
   }
