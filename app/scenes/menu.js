@@ -10,7 +10,7 @@ module.exports = {
 
   create: function () {
     this.add.image(400, 300, 'sky')
-      .setAlpha(0.25);
+      .setAlpha(0.5);
 
     this.add.text(400, 300, 'START', {
       fill: 'white',
@@ -28,7 +28,7 @@ module.exports = {
       .setOrigin(0.5)
       .setShadow(0, 1, 'black', 5);
 
-    this.input.once('pointerup', this.start, this);
+    this.input.once('pointerdown', this.start, this);
   },
 
   extend: {
