@@ -1,7 +1,5 @@
 window.game = new Phaser.Game({
-
   // See <https://github.com/photonstorm/phaser/blob/master/src/boot/Config.js>
-
   width: 800,
   height: 600,
   // zoom: 1,
@@ -31,6 +29,7 @@ window.game = new Phaser.Game({
   //   min: 10,
   //   target: 60
   // },
+  // antialias: true,
   // pixelArt: false,
   // autoResize: false,
   // roundPixels: false,
@@ -40,7 +39,7 @@ window.game = new Phaser.Game({
   loader: {
     // baseURL: '',
     path: 'assets/',
-    maxParallelDownloads: 6
+    // maxParallelDownloads: 32
     // crossOrigin: '', // e.g., 'anonymous'
     // timeout: 0
   },
