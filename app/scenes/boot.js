@@ -35,8 +35,9 @@ module.exports = {
       this.progressBar = this.add.graphics();
     },
 
-    onLoadComplete: function (loader) {
-      console.debug('onLoadComplete', loader);
+    onLoadComplete: function (loader, totalComplete, totalFailed) {
+      console.debug('complete', totalComplete);
+      console.debug('failed', totalFailed);
 
       this.progressBar.destroy();
     },
