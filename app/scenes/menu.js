@@ -1,4 +1,4 @@
-var FONT = 'Futura,system-ui,sans-serif';
+var CONST = require('data/const');
 
 module.exports = {
 
@@ -14,15 +14,15 @@ module.exports = {
 
     this.add.text(400, 300, 'START', {
       fill: 'white',
-      fontFamily: FONT,
+      fontFamily: CONST.fonts.default,
       fontSize: 48
     })
       .setOrigin(0.5)
-      .setShadow(0, 1, '#62F6FF', 10);
+      .setShadow(0, 1, CONST.colors.aqua, 10);
 
     this.add.text(400, 450, 'Last Score: ' + this.registry.get('score'), {
-      fill: '#FED141',
-      fontFamily: FONT,
+      fill: CONST.colors.yellow,
+      fontFamily: CONST.fonts.default,
       fontSize: 24
     })
       .setOrigin(0.5)

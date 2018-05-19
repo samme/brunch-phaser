@@ -1,3 +1,5 @@
+var CONST = require('data/const');
+
 module.exports = {
 
   key: 'default',
@@ -6,6 +8,8 @@ module.exports = {
     console.debug('init', this.scene.key, data, this);
     
     this.events.once('shutdown', this.shutdown, this);
+    
+    this.score = 0;
   },
 
   create: function () {
@@ -15,8 +19,15 @@ module.exports = {
     logo.setVelocity(100, 200);
     logo.setBounce(1, 1);
     logo.setCollideWorldBounds(true);
+    
+    this.add.text(10, 580, '(Q) Quit (R) Restart', {
+      fill: CONST.colors.yellow,
+      fontFamily: CONST.fonts.default,
+      fontSize: 16
+    });
 
     this.input.keyboard.once('keydown_Q', this.quit, this);
+    this.input.keyboard.once('keydown_R', this.restart, this);
   },
 
   update: function () {
@@ -28,7 +39,11 @@ module.exports = {
     score: 0,
 
     quit: function () {
-      this.scene.start('menu', { score: this.score });
+      this.scene.start('menu');
+    },
+
+    restart: function () {
+      this.scene.restart();
     },
 
     shutdown: function () {

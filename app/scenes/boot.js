@@ -1,3 +1,5 @@
+var CONST = require('data/const');
+
 module.exports = {
 
   key: 'boot',
@@ -45,15 +47,13 @@ module.exports = {
     onLoadProgress: function (progress) {
       console.debug('progress', progress);
 
-      var color = this.load.totalFailed ? 0xff2200 : 0xffffff;
-
       this.progressRect.width = progress * this.progressCompleteRect.width;
       
       this.progressBar
         .clear()
-        .fillStyle(0x222222)
+        .fillStyle(CONST.hexColors.darkGray)
         .fillRectShape(this.progressCompleteRect)
-        .fillStyle(color)
+        .fillStyle(this.load.totalFailed ? CONST.hexColors.red : CONST.hexColors.white)
         .fillRectShape(this.progressRect);
     }
 
