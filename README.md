@@ -22,6 +22,7 @@ Get started
   - `brunch new <project> -s phaser`
   - `npm run start` or `brunch watch --server` watches the project with continuous rebuild.
   - `npm run build` or `brunch build --production` builds a minified project for production.
+  - [trouble?](http://brunch.io/docs/troubleshooting)
 - Make:
   - Write your code in [app](app).
   - Put game assets in [assets](app/static/assets).
@@ -31,7 +32,7 @@ Phaser
 
 Phaser is managed through [npm](https://docs.npmjs.com/cli/npm). The latest release is installed when you create a new project.
 
-    npm list --production
+    npm view phaser version
 
 You can install a specific version instead:
 
