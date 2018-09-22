@@ -10,11 +10,11 @@
     "build": "brunch build --production"
   },
   "dependencies": {
-    "phaser": "^3.7.1"
+    "phaser": "^3.13.0"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",
-    "brunch": "^2",
+    "brunch": "^2.10.17",
     "clean-css-brunch": "^2",
     "css-brunch": "^2",
     "javascript-brunch": "^2",
