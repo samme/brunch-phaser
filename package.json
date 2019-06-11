@@ -10,7 +10,7 @@
     "build": "brunch build --production"
   },
   "dependencies": {
-    "phaser": "^3.13.0"
+    "phaser": "^3.17.0"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",
