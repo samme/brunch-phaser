@@ -1,7 +1,7 @@
 Brunch with Phaser 3
 ====================
 
-A [Brunch](http://brunch.io) skeleton for making games with [Phaser 3](http://phaser.io/phaser3). ([Why Brunch?](http://brunch.io/docs/why-brunch))
+A [Brunch](http://brunch.io) skeleton for making games with [Phaser 3](http://phaser.io/phaser3). (But lately I'm using [Parcel](https://github.com/samme/phaser-parcel) instead.)
 
     brunch new <project> -s phaser
 
